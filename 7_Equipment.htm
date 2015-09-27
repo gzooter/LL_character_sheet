@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ll_ch_sheet.css">
+<style>
+.equipBox {
+    border:none;
+    width:760px;
+
+}
+input[type=text] {
+    border:none;
+    border-bottom:2px solid black;  
+}
+input.value{
+   height:15px;
+   width:50px;
+   text-align:right;
+}
+input.weight {
+   height:15px;
+   width:25px;
+   text-align:right;
+}
+.desc {
+   padding:5px;
+   margin:0px;
+}
+
+.desc label, textarea {
+    height:30px;
+    vertical-align:middle;
+}
+fieldset {
+    border:none;
+    width:760px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="equipBox">
+	<h2>Equipment</h2>
+        <fieldset>
+	<p class="desc">
+		<label>Name:&nbsp;<input type="text"></label>&nbsp;
+		<label>Value:&nbsp;<input type="number" class="value"> gp</label>&nbsp;
+		<label>Weight:&nbsp;<input type="number" class="weight"> lbs</label>&nbsp;
+		<label>Description: <textarea rows="2" cols="25"></textarea></label>
+	</p>
+	</fieldset>
+	<fieldset>
+	<p class="desc">
+		<label>Name:&nbsp;<input type="text"></label>&nbsp;
+		<label>Value:&nbsp;<input type="number" class="value"> gp</label>&nbsp;
+		<label>Weight:&nbsp;<input type="number" class="weight"> lbs</label>&nbsp;
+		<label>Description: <textarea rows="2" cols="25"></textarea></label></p>
+	<fieldset>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+body {
+  font-weight:bold;
+}
+
+h1, h2 {
+    text-align:center;
+    font-family:Old English Text MT;
+  
+}
+
+
+ul {
+    list-style-type:none;
+    line-height:40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+.left {
+    float:left;
+    background-color:black;
+    width:50px;
+    height:100%;
+    margin:0px 10px 0px 0px;
+
+}
+
+input[type=number] {
+    width:20px;
+    border:none;
+}
+
+input[type=text] {
+    border:none;
+    border-bottom:2px solid;
+}
+
+.circle {
+    border:2px solid;
+    padding:5px;
+    width:20px;
+    border-radius:20px;
+    display:inline;
+}
+
+.ability {
+    float:left;
+    padding:none;
+    height:500px;
+    width:600px;
+    border:1px black solid;
+    display:inline;
+}
+
+.savingthrows {
+    float:left;
+    padding: 15px;
+    height:250px;
+    width:50%;
+    border:1px black solid;
+}
+
+.adj {
+    text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Labyrinth Lord</h1>
+<div class="wrapper">
+<div class="ability">
+<h2>Abilities</h2>
+<ul>
+<li>
+	<label>STR&nbsp;&nbsp;<div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;
+	<label><div class=circle><input type="number" maxlength=2></div>&nbsp;<span class="underline">&nbsp;Modifier to Hit, Damage, and Forcing Doors</span></label>
+</li>
+<li>
+	<label>CON&nbsp;<div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;
+	<label><div class=circle><input type="number" maxlength=2></div>&nbsp;<span class="underline">&nbsp;Modifier to Hit Points Per Hit Die</span></label>
+</li>
+<li>
+	<label>DEX&nbsp;<div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;
+	<label><div class=circle><input type="number" maxlength=2></div>&nbsp;<span class="underline">&nbsp;AC Modifier</span></label>&nbsp;
+	<label><div class=circle><input type="number" maxlength=2></div>&nbsp;<span class="underline">&nbsp;Missle Attk. Modifier</span></label>
+</li>
+<li>
+	<label>INT&nbsp;&nbsp;<div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;
+	<label><div class=circle><input type="number" maxlength=2></div>&nbsp;<span class="underline">Additional Languages</span></label>&nbsp;
+</li>
+<li>
+	<label>WIS&nbsp;&nbsp;<div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;
+	<label><div class=circle><input type="number" maxlength=2></div>&nbsp;<span class="underline">Saving Throw Modifier to Magic Effects</span></label>
+</li>
+<li>
+	<label>CHA&nbsp;&nbsp;<div class=circle><input type="number" maxlength=2></div>&nbsp;
+	<label><div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;<span class="underline">Reaction Adj.</span></label>
+	<label><div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;<span class="underline">Retainers</span></label>
+</li>
+<li style="margin-left:225px;">
+	<label><div class="circle"><input type="number" maxlength=2></div></label>&nbsp;&nbsp;<span class="underline">Retainer Morale</span></label>
+<li>
+
+
+<table>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+
+
+</div>
+<div class="savingthrows">
+
+<div class="circle"><input type="number" name="breath" maxlength=2></div>
+
+<label for="breath">Breath Attacks</label>
+
+
+<div class="circle"><input type="number" name="poison" maxlength=2></div>
+
+<label for="poison">Poison or Death</label>
+
+
+<div class="circle"><input type="number" name="petrify" maxlength=2></div>
+
+<label for="petrify">Petrify or Paralyze</label>
+
+
+<div class="circle"><input type="number" name="wands" maxlength=2></div>
+
+<label for="wands">Wands</label>
+
+
+<div class="circle"><input type="number" name="spells" maxlength=2></div>
+
+<label for="spells">Spells or Spell-like Abilities</label>
+</div>
+</div>
+</body>
+
+</html>

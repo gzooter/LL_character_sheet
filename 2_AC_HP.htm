@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+<style>
+body {
+    font-family:"Old English Text MT";
+    font-weight:bold;
+}
+.wrapper {
+    position:absolute;
+    left:50%;
+    margin:0px -260px
+}
+/* Divs for AC-HP Box*/
+.achpcontainer {
+    background-color:black;
+    width:535px;
+    height:105px;
+    padding:10px 0px;
+    border-radius:5px;
+    }
+.spacer {
+    padding-top:10px;
+    float:left;
+    height:100px;
+    width:120px;
+    }
+
+/* Shield Shape */
+.shield {
+    float:left;
+    position: relative;
+    width: 84px;
+    height: 75px;
+    background-color: white;
+    border-radius: 0 0 75px 75px;
+    display: inline-block;
+}
+.shield:before, .shield:after {
+    position: absolute;
+    margin-top: 42px;
+    content:"";
+    left: 42px;
+    top: 0;
+    width: 42px;
+    height: 40px;
+    background: white;
+    border-radius: 100px 100px 0 0;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+}
+
+.shield:after {
+    background-color: white;
+    left: 0;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    -o-transform: rotate(60deg);
+    transform: rotate(60deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin :100% 100%;
+}
+
+/* Heart Shape */
+.heart {
+    float:left;
+    position: relative;
+    margin:23px 27px 27px 27px;
+    width: 50px;
+    height: 50px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: white;
+    
+}
+.heart:before, .heart:after{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+.heart:before{
+    bottom: 0px;
+    left: -30px;
+}
+
+.heart:after{
+    top: -30px;
+    right: 0px;
+}
+
+/* Inputs for the AC-HP Box */
+input[name=HPvalue] {
+    position:absolute;
+    left:-7px;
+    top:-2px;
+    width:40px;
+    height:30px;
+    font-size:24px;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+     transform: rotate(-45deg);
+    z-index:1;
+    border:none;
+    text-align:center;
+}
+input[name=ACvalue] {
+    position:absolute;
+    left:20px;
+    top:18px;
+    width:40px;
+    height:30px;
+    font-size:24px;
+    z-index:1;
+    border:none;
+    text-align:center;
+
+}
+
+/* Text for AC-HP Box */
+.largewhite {
+    font-size:36pt;
+    color:white;
+    text-align:center;
+}
+
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="achpcontainer">
+			<div class="spacer" style="width:50px;"> </div>
+			<div class="spacer">
+				<div class="heart"><input name="HPvalue" type="number" maxlength=3>
+				</div>
+			</div>
+			<div class="spacer"><span class="largewhite">HP</span>
+			</div>
+			<div class="spacer">
+				<div class="shield"><input name="ACvalue" type="number" maxlength=3> </div>
+			</div>
+		<div class="spacer"><span class="largewhite">AC</span></div>
+		</div>
+	</div>
+
+</body>

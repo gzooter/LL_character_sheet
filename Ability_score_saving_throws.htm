@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+body {
+  font-weight:bold;
+  line-height:150%;
+}
+
+h1, h2 {
+    text-align:center;
+    font-family:Old English Text MT;
+  
+}
+
+
+ul {
+    list-style-type:none;
+    line-height:40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+.left {
+    float:left;
+    background-color:black;
+    width:50px;
+    height:100%;
+    margin:0px 10px 0px 0px;
+
+}
+
+input[type=number] {
+    width:20px;
+	
+}
+
+input[type=text] {
+    border:none;
+    border-bottom:2px solid;
+}
+
+.circle {
+    border:2px solid;
+    padding:5px;
+    width:20px;
+    border-radius:20px;
+    display:inline;
+}
+
+.ability {
+    float:left;
+    padding:none;
+    height:475px;
+    width:519px;
+    border:1px black solid;
+    display:inline;
+}
+
+.savingthrows {
+    float:left;
+    padding: none;
+    height:250px;
+    width:50%;
+    border:1px black solid;
+}
+
+.adj {
+    text-align:center;
+}
+wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.innerpentagon {
+    top:28px;
+    width: 34px;
+    position: relative;
+    border-width: 30px 13px 0;
+    border-style: solid;
+    border-color: red transparent;
+}
+.innerpentagon::before {
+    content: ' ';
+    height: 0;
+    width: 0;
+    position:absolute;
+    top: -54px;
+    left: -13px;
+    border-width: 0 30px 24px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+
+.outerpentagon {
+    top:-3px;
+    width: 38px;
+	left:-2px;
+    position: relative;
+    border-width: 33px 13px 0;
+    border-style: solid;
+    border-color: blue transparent;
+    z-index:-1;
+	}
+.outerpentagon::before {
+    content: ' ';
+    height: 0px;
+    width: 0;
+    position:absolute;
+    top: -58px;
+    left: -13px;
+    border-width: 0 32px 25px;
+    border-style: solid;
+    border-color: transparent transparent blue;
+	}
+
+.abil_score {
+    display:inline;
+	float:left;
+   }
+   
+table td {
+    border:1px solid black;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    outline:none;
+}
+.savesbox {
+   height:400px;
+   width:75px;
+   background-color:black;
+   border-radius:5px;
+}
+
+.whitespacer {
+    height:100px:
+	weight:250px;
+	display:inline;
+	border:2px solid black;
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<h1>Labyrinth Lord</h1>
+<div class="wrapper">
+<div class="ability">
+<h2>Abilities</h2>
+<table>
+<tr>
+	<td>
+		<div class="whitespacer">
+		<label class="abil_score">STR<input type="number" style="border:2px solid black; border-radius:20px; margin-left:75px;" maxlength=2></div></label>
+		<div class="whitespacer"><div class="innerpentagon"> </div><div class="outerpentagon"> </div></div>
+		<div class="whitespacer">z<input type="number" maxlength=2><span class="underline">Modifier to Hit, Damage, and Forcing Doors</span></label></div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<label class="abil_score">CON <input type="number" maxlength=2></label>
+	</td>
+	<td>
+		<div class="innerpentagon"> </div><div class="outerpentagon"> 
+	</td>
+	<td>
+		<input type="number" maxlength=2><span class="underline">&nbsp;Modifier to Hit Points Per Hit Die</span></label>
+	</td>
+</tr>
+<tr>
+	<td>
+		<label>DEX <input type="number" maxlength=2></label>
+	</td>
+	<td>
+		<div class="innerpentagon"> </div><div class="outerpentagon">
+	</td>
+	<td>
+		<label><input type="number" maxlength=2><span class="underline">AC Modifier</span></label>
+		<label><input type="number" maxlength=2><span class="underline">Missle Attk. Modifier</span></label>
+	</td>
+</tr>
+<tr>
+<td>
+	<label>INT <input type="number" maxlength=2></label></td>
+<td>
+	 <div class="innerpentagon"> </div><div class="outerpentagon"> </td>
+<td>
+	<label><input type="number" maxlength=2><span class="underline">Additional Languages</span></label>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+	<label>WIS <input type="number" maxlength=2> </label>&nbsp;&nbsp;</td>
+<td>
+	 <div class="innerpentagon"> </div><div class="outerpentagon"> 
+</td>
+<td>
+	<label><input type="number" maxlength=2> <span class="underline">Saving Throw Modifier to Magic Effects</span></label>
+</td>
+</tr>
+<tr>
+<td>
+	<label>CHA <input type="number" maxlength=2></td>
+<td>
+	<div class="innerpentagon"> </div><div class="outerpentagon"></div>
+</td>
+<td>
+	<label><input type="number" maxlength=2></label><span class="underline"> Reaction Adj.</span></label>
+	<label><input type="number" maxlength=2></label><span class="underline">Retainers</span></label>
+	<br>
+	<label style="margin-left:50px;"><input type="number" maxlength=2></label><span class="underline">Retainer Morale</span></label>
+</td>
+</tr>
+</table>
+</div>
+<div class="savingthrows">
+<h2>Saving Throws</h2>
+<div class="savesbox" style="float:left"></div>
+<div style="float:left">
+<ul>
+	<li>
+		<label for="breath" style=><input type="number" name="breath" style="margin-left:-94px; border-radius:20px;" maxlength=2><div class="whitespacer"> </div>Breath Attacks</label>
+	</li>
+	<li>
+		<label for="poison"><input type="number" name="poison" maxlength=2> Poison or Death</label>
+	</li>
+	<li>
+		<label for="petrify"><input type="number" name="petrify" maxlength=2> Petrify or Paralyze</label>
+	</li>
+	<li>		
+		<label for="wands"><input type="number" name="wands" maxlength=2> Wands</label>
+	</li>
+	<li>		
+		<label for="spells"><input type="number" name="spells" maxlength=2> Spells or Spell-like Abilities</label>
+	</li>
+</div>
+</body>
+</html>

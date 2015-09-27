@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h3 {
+    font-family:"Old English Text MT";
+    text-align:center;
+}
+.wrapper {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+   border-collapse:collapse;
+}
+table td {
+    border:1px solid black;
+    white-space: nowrap;
+    margin:0 auto;
+    text-align:center;
+}
+input[type=number] {
+    width:30px;
+    text-align:center;
+    border:none;
+}
+.thief input[type=number] {
+    width:40px;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.left {
+    float:left;
+    width:224px;
+}
+.right {
+    float:right;
+    width:224px;
+} 
+.languages {
+    clear:both;
+}
+
+.tableNote {
+    font-size:0.75em;
+    text-align:left;
+}
+.thief table {
+    margin-left:-80px;
+}
+.turnUndead table {
+}
+</style>
+<body>
+<div class="wrapper">
+<div class="section">
+<div class="left">
+<h3>Racial Abilities</h3>
+<textarea rows=5 cols=25> </textarea>
+</div>
+<div class="right">
+<h3>Other Abilities<h3>
+<textarea rows=5 cols=25> </textarea>
+</div>
+</div>
+<div class="languages">
+<label><h3>Languages<br><input type="text"></h3></label>
+</div>
+<div class="thief">
+<h3>Thief Abilities</h3>
+<table cellpadding=1>
+<tr>
+<td>Pick Locks</td>
+<td>Find and Remove Traps</td>
+<td>Pick Pockets*</td>
+<td>Move Silently</td>
+<td>Climb Walls</td>
+<td>Hide in Shadows</td>
+<td>Hear Noise</td>
+</tr>
+<tr>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+</tr>
+<tr>
+<td colspan=9 class="tableNote">* -5% per each 5 levels the thief is lower than the victim. There is always a 1% chance of failure despite a skill percent above 100%. </td>
+</tr>
+</table>
+</div>
+<div class="turnUndead">
+<h3>Cleric - Turn Undead</h3>
+<table>
+<tr>
+<td>Undead HD</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>Unholy*</td>
+</tr>
+<tr>
+<td style="background-color:gray"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number"></td>
+<td><input type="number" style="width:52px"></td>
+</tr>
+<tr>
+<td colspan=11 class="tableNote">*This category includes very powerful undead, or unholy beings such as demons and devils</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+
+</html>

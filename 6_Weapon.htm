@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    line-height:200%;
+}
+h2 {
+    font-family:"Old English Text MT";
+    font-weight:bold;
+    text-align:center;
+}
+div {
+}
+input[type=number] {
+   width:25px;
+}
+
+input[type=text] {
+    width:150px;
+    border:none;
+    border-bottom:2px solid black;
+    text-decoration: underline;
+}
+.weapons {
+    height:400px;
+    width:896px;
+}
+.weaponWrap{
+    float:left;
+    width:448px;
+    height:400px;
+    display:block;
+
+}
+
+.weaponBox {
+   float:left;
+   font-size:0.9em;
+   padding:5px;
+   height:150px;
+   width:434px;
+   border-right:2px dotted black;
+}
+.desc {
+    
+}
+
+.desc label, textarea {
+    height:40px;
+    vertical-align:middle;
+}
+.numDie {
+   text-align:right;
+}
+input.value {
+    width:50px;
+    text-align:right;
+}
+input.weight {
+    text-align:right;
+}
+</style>
+</head>
+<body>
+
+<div class="weapons">
+<!--Melee Weapons-->
+	<div class="weaponWrap">
+		<h2>Melee Weapon</h2>
+		<!--1st Melee Weapon-->
+		<div class="weaponBox">
+			<p>
+				<label>Name:&nbsp;<input type="text"></label>&nbsp;
+				<label>Dmg:&nbsp;<input type="number" class="numDie" maxlength=2>&nbsp;d&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Magic&nbsp;Bonus:&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Value:&nbsp;<input type="number" class="value"> gp</label>&nbsp;
+				<label>Weight:&nbsp;<input type="number" class="weight"> lbs</label></p>
+
+
+			<p class="desc">
+				<label>Description: <textarea rows="2" cols="25"></textarea></label></p>
+		</div>
+
+		<div class="weaponBox">
+			<p>
+				<label>Name:&nbsp;<input type="text"></label>&nbsp;
+				<label>Dmg:&nbsp;<input type="number" class="numDie" maxlength=2>&nbsp;d&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Magic&nbsp;Bonus:&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Value:&nbsp;<input type="number" class="value"> gp</label>&nbsp;
+				<label>Weight:&nbsp;<input type="number" class="weight"> lbs</label></p>
+
+
+			<p class="desc">
+				<label>Description: <textarea rows="2" cols="25"></textarea></label></p>
+		</div>
+
+        </div>
+	<div class="weaponWrap">
+		<h2>Ranged Weapon</h2>
+		<div class="weaponBox" style="border:none">
+			<p>
+				<label>Name:&nbsp;<input type="text"></label>&nbsp;
+				<label>Dmg:&nbsp;<input type="number" class="numDie" maxlength=2>&nbsp;d&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Magic&nbsp;Bonus:&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Value:&nbsp;<input type="number" class="value"> gp</label>&nbsp;
+				<label>Weight:&nbsp;<input type="number" class="weight"> lbs</label></p>
+
+
+			<p class="desc">
+				<label>Description: <textarea rows="2" cols="25"></textarea></label></p>
+		</div>
+
+		<div class="weaponBox" style="border:none">
+	<p>
+				<label>Name:&nbsp;<input type="text"></label>&nbsp;
+				<label>Dmg:&nbsp;<input type="number" class="numDie" maxlength=2>&nbsp;d&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Magic&nbsp;Bonus:&nbsp;<input type="number" maxlength=2></label>&nbsp;
+				<label>Value:&nbsp;<input type="number" class="value"> gp</label>&nbsp;
+				<label>Weight:&nbsp;<input type="number" class="weight"> lbs</label></p>
+
+
+			<p class="desc">
+				<label>Description: <textarea rows="2" cols="25"></textarea></label></p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

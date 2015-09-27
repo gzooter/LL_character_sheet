@@ -1,0 +1,100 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+.triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #000000;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+}
+.innerpentagon {
+    top:50px;
+    width: 54px;
+    position: relative;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: #277bab transparent;
+}
+
+.trapezoid {
+    height:0px;
+    width: 74px;
+    border-top: 69px solid #0000FF;
+    border-left: 30px solid #FF0000;
+    border-right: 30px solid #FFFF00;
+}
+
+.trapezoid:before {
+    content: ' ';
+    width: 0;
+    height: 0;
+    position:absolute;
+    top:46px;
+    left:9px;
+    border-bottom: 60px solid #ff7d00;
+    border-left: 67px solid #00FF00;
+    border-right: 67px solid #FF00FF;
+}
+
+
+.padding {
+    border:1px solid black;
+    padding-top:60px;
+    width:134px;
+
+}
+ 
+.innertrap {
+
+}
+.innerpentagon:before {
+    content: ' ';
+    height: 0;
+    width: 0;
+    position:absolute;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent #277bab;
+}
+.outerpentagon {
+    top:0px;
+    left:50px;
+    width: 57px;
+    position: relative;
+    border-width: 53px 20px 0;
+    border-style: solid;
+    border-color: #FF0000 transparent;
+    z-index:-1;
+}
+ 
+.outerpentagon:before {
+    content: ' ';
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -85px;
+    left: -18px;
+    border-width: 0 47px 36px;
+    border-style: solid;
+    border-color: transparent transparent #FF0000;
+}
+
+</style>
+</head>
+<body>
+<!--<div class="innerpentagon"> </div><div class="outerpentagon"> </div>
+<br>
+<br>
+<div class="triangle"> </div>-->
+<br>
+<br>
+<div class="padding"><div class="trapezoid"> </div></div>
+<br>
+<div class=".innertrap"><div class="padding"><div class="trapezoid"> </div></div></div>
+
+</body>
+<html>

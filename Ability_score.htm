@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-weight:bold;
+}
+
+h1, h2 {
+   font-family:"Old English Text MT";
+   text-align:center;
+}
+.underline {
+    text-decoration:underline;
+}
+.ability {
+   width:546px;
+   height:475px;
+}
+.wrapper_abil {
+    border:none;
+	height:64px;
+	width:543px;
+	border-right:2px solid black;
+}
+.whiteSpacer {
+    float:left;
+	display:inline;
+	height:60px;
+	width:65px;
+    border:none;
+}
+.whiteSpacerWide {
+    float:left;
+	display:inline;
+	height:60px;
+	width:400px;
+	padding-left:10px;
+	border:none;
+}
+.circle {
+    height:32px;
+	width:32px;
+	border:2px solid black;
+	border-radius:30px;
+	text-align:center;
+}
+
+.abilScore {
+    font-size:1.5em;
+	font-weight:bold;
+}
+.abilScore input {
+	position:absolute;
+    height:33px;
+	width:30px;
+	margin-left:36px;
+	font-size:1.1em;
+	text-align:center;
+	border:none;
+	z-index:1;
+	
+}
+.innerPentagon {
+    top:28px;
+    width: 34px;
+    position: relative;
+    border-width: 30px 13px 0;
+    border-style: solid;
+    border-color: white transparent;
+}
+.innerPentagon::before {
+    content: ' ';
+    height: 0;
+    width: 0;
+    position:absolute;
+    top: -54px;
+    left: -13px;
+    border-width: 0 30px 24px;
+    border-style: solid;
+    border-color: transparent transparent white;
+}
+
+.outerPentagon {
+    top:-3px;
+    width: 38px;
+	left:-2px;
+    position: relative;
+    border-width: 33px 13px 0;
+    border-style: solid;
+    border-color: black transparent;
+    z-index:-1;
+	}
+.outerPentagon::before {
+    content: ' ';
+    height: 0px;
+    width: 0;
+    position:absolute;
+    top: -58px;
+    left: -13px;
+    border-width: 0 32px 25px;
+    border-style: solid;
+    border-color: transparent transparent black;
+	}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    outline:none;
+}
+</style>
+</head>
+<body>
+<div class="ability">
+<h2>Ability Scores</h2>
+<div class="wrapper_abil">
+<div class="whiteSpacer"><br><label class="abilScore">STR <input type="number"></label> </div>
+<div class="whiteSpacer"> <div class="innerPentagon"> </div><div class="outerPentagon"> </div></div>
+<div class="whiteSpacerWide"><br>&nbsp;<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;Modifier to Hit, Damage, and Forcing Doors</label></div>
+</div>
+<div class="wrapper_abil">
+<div class="whiteSpacer"><br><label class="abilScore">DEX <input type="number" style="margin-left:32px;"></label> </div>
+<div class="whiteSpacer"> <div class="innerPentagon"> </div><div class="outerPentagon"> </div></div>
+<div class="whiteSpacerWide"><br>&nbsp;<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;AC Modifier</label>&nbsp;&nbsp;
+		<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;Missle Attk. Modifier</label></div>
+</div><div class="wrapper_abil">
+<div class="whiteSpacer"><br><label class="abilScore">CON <input type="number" style="margin-left:30px;"></label> </div>
+<div class="whiteSpacer"> <div class="innerPentagon"> </div><div class="outerPentagon"> </div></div>
+<div class="whiteSpacerWide"><br>&nbsp;<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;Modifier to Hit Points Per Hit Die</label></div>
+</div><div class="wrapper_abil">
+<div class="whiteSpacer"><br><label class="abilScore">INT<input type="number" style="margin-left:40px;"></label> </div>
+<div class="whiteSpacer"> <div class="innerPentagon"> </div><div class="outerPentagon"> </div></div>
+<div class="whiteSpacerWide"><br>&nbsp;<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;Additional Languages</label></div>
+</div><div class="wrapper_abil">
+<div class="whiteSpacer"><br><label class="abilScore">WIS <input type="number"></label> </div>
+<div class="whiteSpacer"> <div class="innerPentagon"> </div><div class="outerPentagon"> </div></div>
+<div class="whiteSpacerWide"><br>&nbsp;<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;Saving Throw Modifier to Magic Effects</label></div>
+</div><div class="wrapper_abil" style="height:82px;">
+<div class="whiteSpacer"><br><label class="abilScore">CHA <input type="number" style="margin-left:30px;"></label> </div>
+<div class="whiteSpacer"> <div class="innerPentagon"> </div><div class="outerPentagon"> </div></div>
+<div class="whiteSpacerWide" style="line-height:250%; height: 80px;">&nbsp;<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;Reaction Adj.</label>&nbsp;&nbsp;
+	<label class="underline"><input type="number" class="circle" maxlength=2>&nbsp;Retainers</label>
+	<br>
+	<label class="underline" style="margin-left:148px;"><input type="number" class="circle" maxlength=2>&nbsp;Retainer Morale</label></div>
+</div>
+</div>
+</body>
+</html>

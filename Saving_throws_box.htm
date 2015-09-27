@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-weight:bold;
+	}
+	
+h1, h2 {
+    font-family:"Old English Text MT";
+	text-align:center;
+}
+.savingThrows {
+   width:546px;
+   height:475px;
+}
+	
+.saveCircle {
+    border:2px solid;
+    padding:5px;
+    width:25px;
+	height:25px;
+    border-radius:25px;
+    display:inline;
+	margin-left: -58px;
+	margin-top: 20px;
+}	
+.wrapperSaves {
+    padding-left:50px;
+    
+}
+.savesBlack {
+   float:left;
+   display:inline;
+   height:375px;
+   width:75px;
+   background-color:black;
+   border-radius:10px;
+}
+.wrapperSavesInd {
+    float:left;
+	height:70px;
+	display:block;
+    width:400px;
+	
+}
+.savesLabel {
+    font-size:1.2em;
+}		
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    outline:none;
+}
+.space {
+   width:150px;
+   border:1px solid black;
+}
+</style>
+</head>
+<body>
+<div class="savingThrows">
+<h2>Saving Throws</h2>
+<div class="wrapperSaves">
+<div class="savesBlack"> </div>
+<div class="wrapperSavesInd"><label class="saves"><input type="text" class="saveCircle "><span class="savesLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Breath Attacks</span></label></div>
+<div class="wrapperSavesInd"><label class="saves"><input type="text" class="saveCircle "><span class="savesLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poison or Death</span></label></div>
+<div class="wrapperSavesInd"><label class="saves"><input type="text" class="saveCircle "><span class="savesLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Petrify or Paralyze</span></label></div>
+<div class="wrapperSavesInd"><label class="saves"><input type="text" class="saveCircle "><span class="savesLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wands</span></label></div>
+<div class="wrapperSavesInd"><label class="saves"><input type="text" class="saveCircle "><span class="savesLabel">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Spells or Spell-like Abilities</span></label></div>
+</div>
+</div>
+</body>
+</html>

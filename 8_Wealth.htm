@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ll_ch_sheet.css">
+<style>
+body {
+    line-height:200%;
+}
+.wealth {
+    width:763px;
+}
+input[type="text"] {
+    border:none;
+    border-bottom:2px solid black;
+}
+.coinBlack {
+   height:60px;
+   width:763px;
+   background-color:black;
+   border-radius:20px;
+ 
+}
+.coin {
+    display:inline;
+    float:left;
+    margin-top:5px;
+    padding:6px;
+    top:5px;
+    height:50px;
+    width:12.7%;
+
+}
+.coin label {
+    font-size:1.1em;
+    font-weight:bold;
+    color:white;
+}
+.coin input {
+    height:30px;
+    width:60px;
+    border-radius:15px;
+    text-align:right;
+    vertical-align:middle;
+}
+.gems {
+    float:left;
+    width:39%;
+    border-right:2px solid black;
+}
+.art {
+    float:left;
+    width:60%;
+}
+.quantity {
+    width:20px;
+}
+.value {
+   width:20px;
+   text-align:right;
+}
+.weight {
+   width:20px;
+   text-align:right;
+}
+.item {
+    border:none;
+    height:75px;
+}
+.wealthObject label, textarea {
+    vertical-align:middle;
+}
+.bottom {
+    height:40px;
+    background-color:black;
+    padding:5px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+.objectWealth {
+    color:white;
+    margin-left:40%;
+    vertical-align:middle;
+}
+.objectWealth input {
+    color:black;
+    width:60px;
+    border-radius:10px;
+
+}
+</style>
+</head>
+<body>
+<div class="wealth">
+	<h2>Wealth</h2>
+		<div class="coinBlack">
+			<div class="coin"> </div>
+			<div class="coin"><label><input type=number>&nbsp;PP </div>
+			<div class="coin"><label><input type=number>&nbsp;GP </div>
+			<div class="coin"><label><input type=number>&nbsp;EP </div>
+			<div class="coin"><label><input type=number>&nbsp;SP </div>
+			<div class="coin"><label><input type=number>&nbsp;CP </div>
+			<div class="coin"> </div>
+		</div>
+	<div style="margin-left:20px">
+		<div class="gems">
+				<h3>Gems</h3>
+				<fieldset class="item">
+					<label>Name&nbsp;<input type="text"></label>&nbsp;
+					<label>#&nbsp<input type="number" class="quantity"></label>&nbsp;
+					<label>Value&nbsp;<input type="number" class="value"> gp</label>&nbsp;
+					<label>Weight&nbsp;<input type="number" class="weight"> lbs</label>
+      				</fieldset>
+				<div class="bottom" style="border-radius: 1em 0em 0em 1em">
+					<p class="objectWealth">Gem Wealth <input type="number"> gp</p>
+				</div>
+		</div>
+		<div class="art">
+				<h3>Art Objects</h3>
+				<fieldset class="item">
+					<label>Name&nbsp;<input type="text"></label>&nbsp;
+					<label>#&nbsp<input type="number" class="quantity"></label>&nbsp;
+					<label>Value&nbsp;<input type="number" class="value" style="width:60px;"> gp</label>&nbsp;&nbsp;&nbsp;
+					<label>Weight&nbsp;<input type="number" class="weight" style="width:60px;"> lbs</label>&nbsp;&nbsp;&nbsp;
+					<label>Description&nbsp;<textarea rows=3 cols=14> </textarea></label>
+				 </fieldset>
+				<div class="bottom" style="border-radius: 0em 1em 1em 0em">
+					<p class="objectWealth">Art Wealth <input type="number"> gp</p>
+				</div>
+	    	</div>
+	</div>
+</div>
+</body>
+</html>

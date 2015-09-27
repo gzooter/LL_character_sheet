@@ -1,0 +1,106 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.innerpentagon {
+    top:50px;
+    width: 54px;
+    position: relative;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: white transparent;
+}
+.innerpentagon::before {
+    content: ' ';
+    height: 0;
+    width: 0;
+    position:absolute;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent white;
+}
+
+.outerpentagon {
+    top:0px;
+    width: 56px;
+	left:-3px;
+    position: relative;
+    border-width: 52px 20px 0;
+    border-style: solid;
+    border-color: black transparent;
+    z-index:-1;
+	}
+.outerpentagon::before {
+    content: ' ';
+    height: 0;
+    width: 2px;
+    position:absolute;
+    top: -89px;
+    left: -20px;
+    border-width: 0 47px 37px;
+    border-style: solid;
+    border-color: transparent transparent black;
+} 
+.scale{
+    -ms-transform: scale(0.5,0.5); /* IE 9 */
+    -webkit-transform: rotate(0.5,0.5); /* Chrome, Safari, Opera */
+    transform: scale(0.5,0.5);
+}
+.innerpentagon_small {
+    top:50px;
+    width: 34px;
+    position: relative;
+    border-width: 30px 13px 0;
+    border-style: solid;
+    border-color: white transparent;
+}
+.innerpentagon_small::before {
+    content: ' ';
+    height: 0;
+    width: 0;
+    position:absolute;
+    top: -54px;
+    left: -13px;
+    border-width: 0 30px 24px;
+    border-style: solid;
+    border-color: transparent transparent white;
+}
+
+.outerpentagon_small {
+    top:19px;
+    width: 38px;
+	left:-2px;
+    position: relative;
+    border-width: 33px 13px 0;
+    border-style: solid;
+    border-color: black transparent;
+    z-index:-1;
+	}
+.outerpentagon_small::before {
+    content: ' ';
+    height: 0px;
+    width: 0;
+    position:absolute;
+    top: -58px;
+    left: -13px;
+    border-width: 0 32px 25px;
+    border-style: solid;
+    border-color: transparent transparent black;
+	}
+
+</style>
+</head>
+<body>
+<div class="innerpentagon"> </div><div class="outerpentagon"> </div>
+<br>
+<div class="innerpentagon_small"> </div><div class="outerpentagon_small"> </div>
+</body>
+</body>
+<html>
